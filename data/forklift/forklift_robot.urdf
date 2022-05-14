@@ -117,6 +117,7 @@
   </link>
 
   <joint name="base_to_fork" type="prismatic">
+   <origin xyz="2 0.2 0" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="fork"/>
     <limit 
@@ -129,6 +130,7 @@
   </joint>
 
   <joint name="base_to_wheel_back_left" type="revolute">
+    <origin xyz="0 .90 0" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="wheel_back_left"/>
     <limit 
@@ -139,6 +141,7 @@
   </joint>
 
   <joint name="base_to_wheel_back_right" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="wheel_back_right"/>
     <limit 
@@ -149,6 +152,7 @@
   </joint>
 
   <joint name="base_to_wheel_front_left" type="revolute">
+    <origin xyz="1.55 0.90 0" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="wheel_front_left"/>
     <limit 
@@ -159,6 +163,7 @@
   </joint>
 
   <joint name="base_to_wheel_front_right" type="revolute">
+    <origin xyz="1.55 0 0" rpy="0 0 0" />
     <parent link="base_link"/>
     <child link="wheel_front_right"/>
     <limit 
